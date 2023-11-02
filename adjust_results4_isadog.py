@@ -38,7 +38,7 @@ def adjust_results4_isadog(results_dic, dogfile):
         dog_names = [line.rstrip() for line in f]
 
     # Iterate over the results dictionary
-    for filename, result in results_dic.items():
+    for result in results_dic.values():
         # Get the pet label
         pet_label = result[0]
 
@@ -46,8 +46,8 @@ def adjust_results4_isadog(results_dic, dogfile):
         classifier_label = result[1]
 
         # Set the is_a_dog flag
-        is_dog = 1 if pet_label in dog_names else 0
-        as_dog = 1 if classifier_label in dog_names else 0
+        is_dog = int(if pet_label in dog_names)
+        as_dog = int(if classifier_label in dog_names)
 
         # Update the results dictionary
         results_dic[filename].append(is_dog)
