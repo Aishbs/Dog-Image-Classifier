@@ -50,5 +50,5 @@ def adjust_results4_isadog(results_dic, dogfile):
         as_dog = int(classifier_label in dog_names)
 
         # Update the results dictionary
-        results.append(is_dog)
-        results.append(as_dog)
+        result.append(is_dog)
+        result.append(as_dog)
