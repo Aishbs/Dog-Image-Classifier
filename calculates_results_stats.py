@@ -47,7 +47,7 @@ def calculates_results_stats(results_dic):
             n_match += 1
         if value[3] == 1 and value[4] == 1:
             n_correct_dogs += 1
-        if value[3] == 1 and value[4] == 0:
+        if value[3] == 0 and value[4] == 0:
             n_correct_notdogs += 1
         if value[3] == 1 and value[2] == 1:
             n_correct_breed += 1
