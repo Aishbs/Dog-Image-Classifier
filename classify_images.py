@@ -55,7 +55,7 @@ def classify_images(images_dir, results_dic, model):
         classifier_label = classifier_label.lower().strip()
 
         # Compare the pet and classifier labels
-        match = int(if label[0] in classifier_label)
+        match = int(label[0] in classifier_label)
 
         # Add the classifier label and the comparison of the labels to the results dictionary
         results_dic[filename].extend([classifier_label, match])
